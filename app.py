@@ -48,9 +48,12 @@ st.set_page_config(page_title="Gestão de Vendas Pro", layout="wide")
 # 2. CARREGAMENTO E LIMPEZA (Sempre com cache para performance)
 @st.cache_data
 def carregar_dados():
-    # Usando o caminho que funcionou na sua máquina
-    caminho = r'C:\Users\COMPUTADOR\Desktop\Jupyter\.venv\Base_vendas.xlsx'
+   @st.cache_data
+def carregar_dados():
+    # Remova o caminho do seu PC e use apenas o nome do arquivo que está no GitHub
+    caminho = 'Base_vendas.xlsx' 
     df = pd.read_excel(caminho)
+    # ... resto do código
     
     # Limpeza de nomes de colunas (para evitar o KeyError que resolvemos)
     df.columns = df.columns.str.strip()
