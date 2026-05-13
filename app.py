@@ -48,8 +48,6 @@ st.set_page_config(page_title="Gestão de Vendas Pro", layout="wide")
 # 2. CARREGAMENTO E LIMPEZA (Sempre com cache para performance)
 @st.cache_data
 def carregar_dados():
-   @st.cache_data
-def carregar_dados():
     # Remova o caminho do seu PC e use apenas o nome do arquivo que está no GitHub
     caminho = 'Base_vendas.xlsx' 
     df = pd.read_excel(caminho)
