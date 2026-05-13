@@ -16,7 +16,7 @@ st.set_page_config(layout="wide")
 st.title("📊 Meu Primeiro Dashboard de Vendas")
 
 # 1. Leitura do arquivo (usando o caminho que você confirmou que funciona)
-df = pd.read_excel(r'C:\Users\COMPUTADOR\Desktop\Jupyter\.venv\Base_vendas.xlsx')
+df = pd.read_excel('Base_vendas.xlsx')
 # Remove espaços invisíveis no início ou fim de todos os nomes de colunas
 df.columns = df.columns.str.strip()
 
