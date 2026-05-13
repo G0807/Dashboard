@@ -13,7 +13,7 @@ import plotly.express as px
 # Configuração para o Streamlit usar a largura total da tela
 st.set_page_config(layout="wide")
 
-st.title("📊 Meu Primeiro Dashboard de Vendas")
+st.title("📊  Dashboard de Vendas")
 
 # 1. Leitura do arquivo (usando o caminho que você confirmou que funciona)
 df = pd.read_excel('Base_vendas.xlsx')
